@@ -1,0 +1,231 @@
+<html lang="fr">
+<head>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire QCM</title>
+</head>
+<body>    <h1>QCM Football</h1>
+
+    
+    <form id="qcmForm">
+        
+        <fieldset>
+            <legend>Question 1 :</legend>
+            <p>Quel joueurs a marqué le plus de but dans l'histoire du football ?</p>
+            <label>
+                <input type="radio" name="q1" value="Pelé"> Pelé
+            </label>
+            <label>
+                <input type="radio" name="q1" value="Ronaldo"> Ronaldo
+            </label>
+            <label>
+                <input type="radio" name="q1" value="Messi"> Messi
+            </label>
+        </fieldset>
+        
+        
+        <fieldset>
+            <legend>Question 2 :</legend>
+            <p>Qui a gagner la coupe du monde en 2018 ?</p>
+            <label>
+                <input type="radio" name="q2" value="Allemagne"> Allemagne
+            </label>
+            <label>
+                <input type="radio" name="q2" value="France"> France
+            </label>
+            <label>
+                <input type="radio" name="q2" value="Italie"> Italie
+            </label>
+        </fieldset>
+        
+        
+        <fieldset>
+            <legend>Question 3 :</legend>
+            <p>Quelle joueur a recemment signer au Etat-unis ?</p>
+            <label>
+                <input type="radio" name="q3" value="Ronaldo"> Ronaldo
+            </label>
+            <label>
+                <input type="radio" name="q3" value="Neymar"> Neymar
+            </label>
+            <label>
+                <input type="radio" name="q3" value="Messi"> Messi
+            </label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Question 4 :</legend>
+            <p>Où c'est deroulé la derniere coupe du monde ?</p>
+            <label>
+                <input type="radio" name="q4" value="France"> France
+            </label>
+            <label>
+                <input type="radio" name="q4" value="Arabie-saoudite"> Arabie-saoudite
+            </label>
+            <label>
+                <input type="radio" name="q4" value="Russie"> Russie
+            </label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Question 5 :</legend>
+            <p>Quel joueur a le plus de ballons d'or ?</p>
+            <label>
+                <input type="radio" name="q5" value="Benzema"> Benzema
+            </label>
+            <label>
+                <input type="radio" name="q5" value="Messi"> Messi
+            </label>
+            <label>
+                <input type="radio" name="q5" value="Poutine"> Poutine
+            </label>
+        </fieldset>
+        
+
+        <fieldset>
+            <legend>Question 6 :</legend>
+            <p>Qui a gagner le dernier ballon d'or ?</p>
+            <label>
+                <input type="radio" name="q6" value="Mbappe"> Mbappe
+            </label>
+            <label>
+                <input type="radio" name="q6" value="Haaland"> Haaland
+            </label>
+            <label>
+                <input type="radio" name="q6" value="Benzema"> Benzema
+            </label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Question 7 :</legend>
+            <p>Quel club a gagner la derniere league des champions ?</p>
+            <label>
+                <input type="radio" name="q7" value="Paris"> Paris
+            </label>
+            <label>
+                <input type="radio" name="q7" value="Real"> Real
+            </label>
+            <label>
+                <input type="radio" name="q7" value="Liverpool"> Liverpool
+            </label>
+        </fieldset>
+        
+
+        <fieldset>
+            <legend>Question 8 :</legend>
+            <p>Avec quelle club jou ousmane dembele ?</p>
+            <label>
+                <input type="radio" name="q8" value="Lyon"> Lyon
+            </label>
+            <label>
+                <input type="radio" name="q8" value="Paris"> Paris
+            </label>
+            <label>
+                <input type="radio" name="q8" value="Barcelone"> Barcelone
+            </label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Question 9 :</legend>
+            <p>Quel joueur a réalisé le triplé le plus rapide de la Premier League ?</p>
+            <label>
+                <input type="radio" name="q9" value="Sergio-ramos"> Sergio-ramos
+            </label>
+            <label>
+                <input type="radio" name="q9" value="Mané"> Mané
+            </label>
+            <label>
+                <input type="radio" name="q9" value="Pogba"> Pogba
+            </label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Question 10 :</legend>
+            <p>Quelle est le club le plus nul de tout les temps ?</p>
+            <label>
+                <input type="checkbox" name="q10" value="Marseilles"> Marseilles
+            </label>
+            <label>
+                <input type="checkbox" name="q10" value="Marseille"> Marseille
+            </label>
+            <label>
+                <input type="checkbox" name="q10" value="Marseile"> Marseile
+            </label>
+        </fieldset>
+
+
+
+        <div>
+            <button name="e1" type="reset">Effacer les sélections</button>
+            <button type="button" onclick="corrigerQCM()">Corriger</button>
+            <button name="corrigev2" type="button" onclick="correctionQCM()">Correction du QCM</button>
+
+        </div>
+    </form>
+
+  
+    <div id="resultat"></div>
+
+
+
+<script>
+    function correctionQCM() {
+        window.location.href = "correction.html";
+    }
+    </script>
+
+
+    <script>
+        
+        function corrigerQCM() {
+            const formulaire = document.getElementById("qcmForm");
+            const resultat = document.getElementById("resultat");
+            let score = 0;
+
+         
+            if (formulaire.q1.value === "Pelé") {
+                score++;
+            }
+            if (formulaire.q2.value === "France") {
+                score++;
+            }
+            if (formulaire.q3.value === "Messi") {
+                score++;
+            }
+            if (formulaire.q4.value === "Arabie-saoudite") {
+                score++;
+            }
+            if (formulaire.q5.value === "Messi") {
+                score++;
+            }
+            if (formulaire.q6.value === "Benzema") {
+                score++;
+            }
+            if (formulaire.q7.value === "Real") {
+                score++;
+            }
+            if (formulaire.q8.value === "Paris") {
+                score++;
+            }
+            if (formulaire.q9.value === "Mané") {
+                score++;
+            }
+            if (formulaire.q10.value === "Marseille") {
+                score++;
+            }
+
+            
+            resultat.innerHTML = `Votre score : ${score} / 10`;
+        }
+        </script>
+</body>
+</html>
+
+
+      

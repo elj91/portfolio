@@ -1,0 +1,64 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+
+#qcmForm {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+legend {
+    font-weight: bold;
+    color: #333;
+}
+
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button[name="corrigev2"] {
+    background-color: #2ECC71;
+
+}
+button[name="e1"] {
+    background-color: #FF0000;
+}
+#resultat {
+    font-weight: bold;
+    margin: 20px 0;
+    color: #333;
+}
+
