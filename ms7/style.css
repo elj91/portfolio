@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.banniere {
+    width: 100%;
+    background-color: #a81f76;
+    color: #e4c7ec;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Courier New', monospace;
+}
+
+.centrale {
+    display: flex;
+    margin: 20px;
+}
+
+.menu {
+    width: 20%;
+    border: 1px solid #648ba1;
+    padding: 10px;
+    margin-right: 20px;
+    text-align: center;
+    color: #ff6347;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    height: 534px;
+    font-family: 'Times New Roman', serif;
+}
+
+.niveau1 li {
+    list-style: none;
+    margin: 5px 0;
+}
+
+.niveau1 a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border: 1px solid #648ba1;
+    text-align: center;
+    height: 20px;
+    width: 150px;
+    box-shadow: 3px 3px 5px #2c2c2c;
+    color: #8b4513; 
+    font-family: 'Comic Sans MS', cursive;
+}
+
+.niveau1 a:hover {
+    background-color: #b8860b;
+    box-shadow: 3px 3px 5px #cd853f;
+    border-left: 8px solid #556b2f; 
+    border-right: 8px solid #556b2f;
+}
+
+.sousmenu ul {
+    display: none;
+}
+
+.sousmenu:hover ul {
+    display: block;
+}
+
+.niveau2 a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border: 1px solid #648ba1;
+    text-align: center;
+    box-shadow: 3px 3px 5px #2c2c2c;
+    color: #8b4513; 
+    font-family: 'Comic Sans MS', cursive;
+}
+
+.niveau2 a:hover {
+    background-color: #b8860b;
+    box-shadow: 3px 3px 5px #cd853f;
+    border-left: 8px solid #228b22; 
+    border-right: 8px solid #228b22;
+}
+
+.imgiframe {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #648ba1;
+}
+
+iframe {
+    width: 75%;
+    height: 580px;
+}
+
+.photo {
+    width: 20%;
+    height: 100px;
+    background-image: url('logo.gif');
+    background-size: cover;
+    background-position: center;
+}
+
+
+footer {
+    width: 100%;
+    background-color: #a81f76;
+    color: #e4c7ec;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Courier New', monospace;
+}

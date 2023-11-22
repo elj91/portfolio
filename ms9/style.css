@@ -1,0 +1,109 @@
+body {
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #ebebeb;
+}
+
+.page {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    border: 2px solid #999;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+header img {
+    max-height: 70px;
+}
+
+.entreprise-info, .facture-info {
+    text-align: center;
+    color: #333;
+}
+
+#facture-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+#destinataire, #envoie {
+    flex: 1;
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+#facture-tableau {
+    width: 100%;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+}
+
+#facture-tableau th, #facture-tableau td {
+    border: 2px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+#facture-tableau input {
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    outline: none;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+#totals {
+    margin-top: 30px;
+    text-align: right;
+}
+
+#totals input {
+    border: none;
+    width: 10%;
+    box-sizing: border-box;
+    padding: 10px;
+    outline: none;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#boutons {
+    text-align: center;
+    margin-top: 30px;
+}
+
+button {
+    margin-left: 20px;
+    padding: 15px 30px;
+    cursor: pointer;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 2px solid #333;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #333;
+}
