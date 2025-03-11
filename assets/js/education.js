@@ -8,53 +8,53 @@ const moocs = document.querySelector(".moocs");
 const moocscards = [
   {
     title: "PHP",
-    cardImage: "assets/images/education-page/php.svg",
+    cardImage: "assets/images/techstack-page/php.svg",
     moocLink: "https://www.php.net",
   },
   {
     title: "MySQL",
-    cardImage: "assets/images/education-page/mysql.png",
+    cardImage: "assets/images/techstack-page/mysql.png",
     moocLink: "https://dev.mysql.com",
   },
   {
     title: "HTML",
-    cardImage: "assets/images/education-page/html.png",
+    cardImage: "assets/images/techstack-page/html.png",
     moocLink: "https://developer.mozilla.org/fr/docs/Web/HTML",
   },
   {
     title: "CSS",
-    cardImage: "assets/images/education-page/css.png",
+    cardImage: "assets/images/techstack-page/css.png",
     moocLink: "https://developer.mozilla.org/fr/docs/Web/CSS",
   },
   {
     title: "Python",
-    cardImage: "assets/images/education-page/python.jpeg",
+    cardImage: "assets/images/techstack-page/python.jpeg",
     moocLink: "https://www.python.org/",
   },
   {
     title: "Javascript",
-    cardImage: "assets/images/education-page/js.png",
+    cardImage: "assets/images/techstack-page/js.png",
     moocLink: "https://developer.mozilla.org/fr/docs/Web/JavaScript",
   },
   {
     title: " C#",
-    cardImage: "assets/images/education-page/csharp.png",
+    cardImage: "assets/images/techstack-page/csharp.png",
     moocLink: "https://learn.microsoft.com/fr-fr/dotnet/csharp/tour-of-csharp/overview",
   },
   {
     title: "Java",
-    cardImage: "assets/images/education-page/java.png",
+    cardImage: "assets/images/techstack-page/java.png",
     moocLink: "https://www.java.com/fr/download/help/whatis_java.html",
   },
   {
     title: "Laravel",
-    cardImage: "assets/images/education-page/laravel.png",
+    cardImage: "assets/images/techstack-page/laravel.png",
     moocLink:
       "https://laravel.com/",
   },
   {
     title: "Bootstrap",
-    cardImage: "assets/images/education-page/bootstrap.jpeg",
+    cardImage: "assets/images/techstack-page/bootstrap.jpeg",
     moocLink: "https://getbootstrap.com/docs/4.1/getting-started/introduction/",
   },
   
