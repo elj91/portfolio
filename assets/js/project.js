@@ -6,7 +6,7 @@ const projectcards = document.querySelector(".projectcards");
 // Array of object for projects
 const projects = [
   {
-    title: "Gestion d'activité",
+    title: "Gestion d'activité - Web",
     cardImage: "assets/images/project-page/vva.avif",
     description: "Backend en PHP: insription, gestion des activité (CRUD), My SQL.",
     tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
@@ -14,7 +14,7 @@ const projects = [
     Githublink: "https://github.com/elj91/Projet-resa-activite",
   },
   {
-    title: "Gestion Zoo",
+    title: "Gestion Zoo - Web",
     cardImage: "assets/images/project-page/zoo.avif",
     description: "Gestion des animaux et employés d'un zoo.",
     tagimg: "https://image.flaticon.com/icons/png/512/643/643350.png",
@@ -22,7 +22,7 @@ const projects = [
     Githublink: "https://github.com/elj91/Projet-ZOO",
   },
   {
-    title: " Reservation Hotel",
+    title: " Reservation Hotel - Web",
     cardImage: "assets/images/project-page/hotel.jpg",
     description: "Espace client reservation de chambre d'hotel. Espace Admin accès a tout les informations, (CRUD).",
     tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
@@ -30,7 +30,7 @@ const projects = [
     Githublink: "https://github.com/elj91/Reservation-hotel",
   },
   {
-    title: "Location de véhicule",
+    title: "Location de véhicule - API",
     cardImage: "assets/images/project-page/moto.jpg",
     description: "Exercise tracker built using basic redux.",
     tagimg: "https://miro.medium.com/max/2800/0*U2DmhXYumRyXH6X1.png",
