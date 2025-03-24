@@ -11,7 +11,7 @@ const projects = [
     description: "Backend en PHP: insription, gestion des activité (CRUD), My SQL.",
     tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
     Previewlink: "http://elyesjaffel.kesug.com",
-    Githublink: "https://github.com/elj91/Projet-resa-activite",
+    Githublink: "https://github.com/elj91/Gestion-Village-Vacances",
   },
   {
     title: "Gestion Zoo - Web",
