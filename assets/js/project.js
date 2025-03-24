@@ -18,7 +18,7 @@ const projects = [
     cardImage: "assets/images/project-page/zoo.avif",
     description: "Gestion des animaux et employés d'un zoo.",
     tagimg: "https://image.flaticon.com/icons/png/512/643/643350.png",
-    Previewlink: "http://zoo.liveblog365.com",
+    Previewlink: "http://zoo.great-site.net",
     Githublink: "https://github.com/elj91/Projet-ZOO",
   },
   {
