@@ -10,7 +10,7 @@ const projects = [
     cardImage: "assets/images/project-page/vva.avif",
     description: "Backend en PHP: insription, gestion des activité (CRUD), My SQL.",
     tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
-    Previewlink: "http://elyesjaffel.kesug.com",
+    Previewlink: "http://elj.wuaze.com",
     Githublink: "https://github.com/elj91/Gestion-Village-Vacances",
   },
   {
