@@ -35,7 +35,7 @@ const projects = [
     description: "Exercise tracker built using basic redux.",
     tagimg: "https://miro.medium.com/max/2800/0*U2DmhXYumRyXH6X1.png",
     Previewlink: "#",
-    Githublink: "https://github.com/elj91/location-moto",
+    Githublink: "https://github.com/elj91/gestion-location-moto",
   },
   
 ];
