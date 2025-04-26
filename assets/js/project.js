@@ -26,7 +26,7 @@ const projects = [
     cardImage: "assets/images/project-page/hotel.jpg",
     description: "Espace client reservation de chambre d'hotel. Espace Admin accès a tout les informations, (CRUD).",
     tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
-    Previewlink: "http://elj.liveblog365.com",
+    Previewlink: "http://elyesjaffel.kesug.com",
     Githublink: "https://github.com/elj91/Reservation-hotel",
   },
   {
