@@ -141,3 +141,92 @@ body[light-mode="dark"] .card a:hover {
         font-size: 1.2rem;
     }
 }
+
+/* Modifications à apporter à votre fichier veille.css */
+
+/* Amélioration de la lisibilité du texte */
+.card-text, .card ul li {
+    color: #333;  /* Texte plus foncé en mode clair */
+    font-size: 1.05rem;  /* Taille légèrement plus grande */
+    line-height: 1.6;    /* Espacement des lignes amélioré */
+}
+
+/* Adaptation pour le mode sombre */
+body[light-mode="dark"] .card-text, 
+body[light-mode="dark"] .card ul li {
+    color: #e0e0e0;  /* Texte plus clair en mode sombre */
+}
+
+/* Amélioration des titres dans les cartes */
+.card-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Ajout d'espacement pour les éléments de liste */
+.card ul li {
+    margin-bottom: 8px;
+}
+
+/* Styles pour les conteneurs d'images */
+.img-container {
+    text-align: center;
+    margin: 15px 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.img-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.img-container:hover img {
+    transform: scale(1.03);
+}
+
+.img-caption {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 8px;
+    font-style: italic;
+    color: #666;
+}
+
+body[light-mode="dark"] .img-caption {
+    color: #aaa;
+}
+
+/* Amélioration des cartes avec images */
+.card-with-image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card-with-image .card-content {
+    flex: 3;
+}
+
+.card-with-image .card-image {
+    flex: 2;
+    padding: 15px;
+}
+
+@media (max-width: 768px) {
+    .card-with-image {
+        flex-direction: column;
+    }
+    
+    .card-with-image .card-image {
+        order: 1;
+        width: 100%;
+        padding: 15px 15px 0 15px;
+    }
+    
+    .card-with-image .card-content {
+        order: 2;
+    }
+}
