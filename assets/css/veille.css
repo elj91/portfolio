@@ -259,3 +259,94 @@ body[light-mode="dark"] .table th {
         font-size: 1.3rem;
     }
 }
+
+/* Ajout à votre CSS pour corriger la taille et le positionnement des images */
+
+/* Taille fixe pour les images */
+.img-container img {
+    max-width: 100%;
+    height: auto;
+    max-height: 250px; /* Limite la hauteur des images */
+    object-fit: cover; /* Garde les proportions tout en remplissant l'espace */
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Mise en page améliorée pour les conteneurs d'images */
+.img-container {
+    text-align: center;
+    margin: 15px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%; /* Prend toute la largeur disponible */
+}
+
+/* Correction pour les layouts avec images */
+.card-with-image {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* Aligne les éléments en haut */
+    gap: 20px; /* Espace entre les éléments */
+}
+
+.card-with-image .card-content {
+    flex: 3;
+}
+
+.card-with-image .card-image {
+    flex: 2;
+    padding: 0; /* Enlève le padding supplémentaire */
+}
+
+/* Style pour les timeline items avec image */
+.timeline-with-image {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.timeline-with-image .timeline-content {
+    flex: 3;
+}
+
+.timeline-with-image .timeline-image {
+    flex: 1;
+}
+
+.timeline-image .img-container {
+    margin: 0;
+}
+
+/* Assure que toutes les cartes ont le même style */
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex: 1;
+    padding: 1.5rem;
+}
+
+/* Media queries pour responsivité */
+@media (max-width: 768px) {
+    .card-with-image, .timeline-with-image {
+        flex-direction: column;
+    }
+    
+    .timeline-with-image .timeline-image {
+        order: 1;
+        width: 100%;
+    }
+    
+    .timeline-with-image .timeline-content {
+        order: 2;
+        width: 100%;
+    }
+    
+    .img-container img {
+        max-height: 200px;
+    }
+}
