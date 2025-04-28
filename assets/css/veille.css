@@ -1,0 +1,143 @@
+/* Styles pour la page de veille technologique */
+
+.veille-section {
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+
+.section-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.veille-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    opacity: 0.8;
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+}
+
+.card-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(106, 0, 187, 0.2);
+    padding-bottom: 10px;
+}
+
+.purple {
+    color: #6a00bb;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 60px;
+}
+
+.timeline-date {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 45px;
+    height: 45px;
+    background: #6a00bb;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.timeline-content {
+    background: rgba(106, 0, 187, 0.05);
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 3px solid #6a00bb;
+}
+
+.timeline-content h5 {
+    color: #6a00bb;
+    margin-bottom: 10px;
+}
+
+/* Adaptation au thème clair/sombre */
+body[light-mode="dark"] .card {
+    background-color: #2b2a2a;
+    color: #ccc;
+}
+
+body[light-mode="dark"] .timeline-content {
+    background: rgba(106, 0, 187, 0.15);
+}
+
+body[light-mode="light"] .card {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Styles pour les liens */
+.card a {
+    color: #6a00bb;
+    transition: color 0.3s;
+}
+
+.card a:hover {
+    color: #9142c6;
+    text-decoration: none;
+}
+
+body[light-mode="dark"] .card a {
+    color: #bb86fc;
+}
+
+body[light-mode="dark"] .card a:hover {
+    color: #d7b8ff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .veille-section {
+        padding-top: 100px;
+    }
+    
+    .timeline-item {
+        padding-left: 50px;
+    }
+    
+    .timeline-date {
+        width: 38px;
+        height: 38px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .veille-subtitle {
+        font-size: 1.2rem;
+    }
+}
